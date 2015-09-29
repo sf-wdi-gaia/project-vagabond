@@ -48,7 +48,7 @@ Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and 
 
 ## Presentation
 
-Each group will present their project on **Friday, October 2nd** starting at **9:17am**. Your group's presentation should be **5 minutes or less** and cover the following:
+Each group will present their project on **Thursday, October 1st** starting at **1:30pm** in a science fair manner.
 
 * Quick demo of your app (1 minute)
 * Each group member should answer the following:
