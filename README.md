@@ -16,7 +16,8 @@ The client has provided basic wireframes and user stories. In some cases, these 
 ## Expectations
 
 You need to be at GA every morning at **10am** to meet with your client. 
-This contract consists of four core sprint and four bonus sprints. Each sprint consists of a set of user stories. YOU MAY NOT BEGIN A NEW SPRINT/BONUSES WITHOUT CLIENT APPROVAL.
+
+This contract consists of four core sprints and four bonus sprints. Each sprint consists of a set of user stories. YOU MAY NOT BEGIN A NEW SPRINT/BONUSES WITHOUT CLIENT APPROVAL.
 
 You will work in groups of four, and we expect you to always **pair** when writing code.
 
