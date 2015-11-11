@@ -48,7 +48,7 @@ Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and 
 
 ## Presentation
 
-Each group will present their project on **Tuesday, November 17th** starting at **10:00am** for 8 minutes.
+Each group will present their project on **Tuesday, November 17th** starting at **10:30am** for 10 minutes.
 
 * Quick demo of your app
 * Each group member should answer the following:
