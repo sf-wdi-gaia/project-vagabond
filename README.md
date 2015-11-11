@@ -15,6 +15,7 @@ The client has provided basic wireframes and user stories. In some cases, these 
 
 ## Expectations
 
+You need to be at GA every morning at **10am** to meet with your client. 
 This contract consists of four core sprint and four bonus sprints. Each sprint consists of a set of user stories. YOU MAY NOT BEGIN A NEW SPRINT/BONUSES WITHOUT CLIENT APPROVAL.
 
 You will work in groups of four, and we expect you to always **pair** when writing code.
@@ -50,8 +51,11 @@ Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and 
 
 Each group will present their project on **Tuesday, November 17th** starting at **10:30am** for 10 minutes.
 
-* Quick demo of your app
-* Each group member should answer the following:
-  * What parts of the project did you work on?
-  * What did you learn about the process of working in a group?
-O
+Each member of your group should speak during your presentation. Make sure to mention what part of the project you worked on.
+
+Make sure your presentation includes:
+
+* Tour of your app
+* What you did that is unique or creative in approaching the requirements
+* What was easier than you thought? What was more challenging?
+* Shout outs
