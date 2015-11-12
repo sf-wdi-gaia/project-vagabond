@@ -1,4 +1,4 @@
-<img src="logo.png">
+<img src="logo.png" width=70%>
 
 # Vagabond App
 
@@ -15,13 +15,13 @@ The client has provided basic wireframes and user stories. In some cases, these 
 
 ## Expectations
 
-This contract consists of four core sprints and four bonus sprints. Each sprint consists of a set of user stories. YOU MAY NOT BEGIN A NEW SPRINT/BONUSES WITHOUT CLIENT APPROVAL.
+This contract consists of four core sprints and four bonus sprints. Each sprint consists of a set of user stories. Most groups will not complete all of the sprints within the time period.  YOU MAY NOT BEGIN A NEW SPRINT OR START ON BONUSES WITHOUT CLIENT APPROVAL.
 
 You need to be at GA every morning at **10am** to meet with your client. 
 
 You will work in groups of four, and we expect you to always **pair** when writing code.
 
-During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and your next steps to your teammates. Use a kanban-style scrumb board such as trello to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example trello board</a>).
+During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and your next steps to your teammates. Use a kanban-style scrum board such as trello to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example trello board</a>).
 
 Commit changes at least once for each user story. Consider creating automated tests or even implementing **TDD** for any significantly complex application behavior.
 
@@ -52,11 +52,12 @@ Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and 
 
 Each group will present their project on **Tuesday, November 17th** starting at **10:30am** for 10 minutes.
 
-Each member of your group should speak during your presentation. Make sure to mention what part of the project you worked on.
+Each member of your group should speak during your presentation. Make sure to mention which parts of the project you worked on.
 
 Make sure your presentation includes:
 
 * Tour of your app
-* What you did that is unique or creative in approaching the requirements
+* What your group did that is unique or creative in approaching the requirements
 * What was easier than you thought? What was more challenging?
-* Shout outs
+* What is a lesson you will carry forward to the group project?
+* Shout outs for fellow students
