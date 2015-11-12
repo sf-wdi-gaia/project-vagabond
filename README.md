@@ -27,6 +27,8 @@ Commit changes at least once for each user story. Consider creating automated te
 
 Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and some custom CSS or Sass/Less.
 
+Use the git [Collaborator Scenario](https://github.com/sf-wdi-22-23/modules-23/tree/master/w07-ruby-on-rails-cont/d3-homework#collaborator-scenario). 
+
 **Refactor** your code after each sprint, considering:
 
 * Naming
