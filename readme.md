@@ -2,62 +2,62 @@
 
 ## Brief
 
-We have been commissioned to build a travel community, codenamed Vagabond for now, for users to share tips (aka posts) about their favorite locations around the world.
+We have been commissioned to build a travel community, code-named **Project Vagabond** for now, for users to share tips (AKA posts) about their favorite locations around the world.
 
 ## Client Contract
 
 The client has provided basic wireframes and user stories. In some cases, these requirements may be vague or incomplete.
 
-* <a href="wireframes.png" target="_blank">Wireframes</a>
-* <a href="userstories.md" target="_blank">User Stories</a>
+* [Wireframes](./wireframes)
+* [User Stories](./user-stories)
 
 ## Expectations
 
-This contract consists of four core sprints and four bonus sprints. Each sprint consists of a set of user stories. Most groups will not complete all of the sprints within the time period.  YOU MAY NOT BEGIN A NEW SPRINT OR START ON BONUSES WITHOUT CLIENT APPROVAL.
+The client contract consists of four core sprints and four bonus sprints. Each sprint contains a set of user stories. You may not complete all of the sprints within the time period, and that's ok. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
 
-You need to be at GA every morning at **10am** to meet with your client.
+**IMPORTANT:** You may not begin a new sprint or start on a bonus without client approval.
 
-You will work in groups of four, and we expect you to always **pair** when writing code.
+You will work in groups of 3-4, and we expect you to **pair program** for the majority of the time you're writing code.
 
-During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and your next steps to your teammates. Use a kanban-style scrum board such as trello to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example trello board</a>).
+During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and your next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example Trello board</a>).
 
-Commit changes at least once for each user story. Consider creating automated tests or even implementing **TDD** for any significantly complex application behavior.
+Commit changes at least once for each user story. Consider creating **automated tests** or even implementing TDD for any complex application behavior.
 
-Put effort into your **design**. Use a CSS framework (Bootstrap), partials, and some custom CSS or Sass/Less.
+Put effort into your **design**. Use a CSS framework (e.g. Bootstrap), partials, and some custom CSS or Sass/Less.
 
-Use the git [Collaborator Scenario](https://github.com/sf-wdi-22-23/modules-23/tree/master/w07-ruby-on-rails-cont/d3-homework#collaborator-scenario).
+Use the **<a href="https://github.com/sf-wdi-24/modules/tree/master/how-tos/github/collaboration-workflow" target="_blank">git collaborator scenario</a>, feature branches, and pull requests**.
 
 **Refactor** your code after each sprint, considering:
 
-* Naming
-* Commenting
-* Organization
-* DRYness
 * Indentation
 * Readability
+* Naming
+* Organization
+* Commenting
+* DRYness
 
 ## Questions to Ask Yourselves
 
-1. **Are you all clear about what the client wants?** Identify vague areas. Seek clarification in any cases where you feel less confident about your interpretation of the client' vision.
+1. **Are you all clear about what the client wants?** Identify vague areas. Seek clarification in any cases where you feel less confident about your interpretation of the client's vision.
 
-1. **What will the UX/UI flow be?** Hammer out any areas of ambiguity in the wireframes
+2. **What will the UX/UI flow be?** Hammer out any areas of ambiguity in the wireframes
 
-1. **Which models do need to be implemented?** Create an ERD for the client to reference.
+3. **Which models do you need to implement?** Create an ERD for the client to reference.
 
-1. **What are the major milestones or components that need to be completed?** How can these be turned into tasks that group members can complete in pairs? Where do these milestones overlap and how those related tasks be managed?
+4. **What are the major milestones or components that you need to complete?** How can these be turned into tasks that group members can complete in pairs? Where do these milestones overlap and how will those related tasks be managed?
 
-1. **What milestones are you and your group members interested in working on?** How can you effectively delegate the work into pairs so that each group member is interested, challenged, and productive?
+5. **What milestones are you and your group members interested in working on?** How can you effectively delegate the work into pairs so that each group member is interested, challenged, and productive?
 
 ## Presentation
 
-Each group will present their project on **Tuesday, November 17th** starting at **10:30am** for 10 minutes.
+Each group will present their project on **Thursday, January 7th** starting at **10:00am** for 10 minutes.
 
-Each member of your group should speak during your presentation. Make sure to mention which parts of the project you worked on.
+Each member of your group should speak during your presentation and mention which parts of the project they worked on.
 
-Make sure your presentation includes:
+**Your presentation should include:**
 
-* Tour of your app
-* What your group did that is unique or creative in approaching the requirements
+* Tour (demo) of your app.
+* How did your group approach the requirements? (mention anything unique or creative your group chose to do)
 * What was easier than you thought? What was more challenging?
-* What is a lesson you will carry forward to the group project?
-* Shout outs for fellow students
+* What is a lesson you will carry forward to working on Project 2?
+* Shout outs for fellow students!
