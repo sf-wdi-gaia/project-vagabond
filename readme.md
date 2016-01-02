@@ -48,6 +48,36 @@ Use the **<a href="https://github.com/sf-wdi-24/modules/tree/master/how-tos/gith
 
 5. **What milestones are you and your group members interested in working on?** How can you effectively delegate the work into pairs so that each group member is interested, challenged, and productive?
 
+<!-- ## Groups
+
+Each group has an assigned instructor or DIR, who will act as your client as well as give technical support during instructor-group meetings.
+
+#### Group 1 - Ben
+
+* Eddy
+* Michael
+* Victoria
+
+#### Group 2 - Cameron
+
+* Alan
+* Carlos
+* Steven
+* Zohar
+
+#### Group 3 - Erik
+
+* André
+* Dave
+* John
+* Stanley
+
+#### Group 4 - Zoe
+
+* Adam
+* Cynthia
+* Trung -->
+
 ## Presentation
 
 Each group will present their project on **Thursday, January 7th** starting at **10:00am** for 10 minutes.
