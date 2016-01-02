@@ -13,7 +13,7 @@ The client has provided basic wireframes and user stories. In some cases, these 
 
 ## Expectations
 
-The client contract consists of four core sprints and four bonus sprints. Each sprint contains a set of user stories. You may not complete all of the sprints within the time period, and that's ok. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
+The client contract consists of three core sprints and four bonus sprints. Each sprint contains a set of user stories. You may not complete all of the sprints within the time period, and that's ok. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
 
 **IMPORTANT:** You may not begin a new sprint or start on a bonus without client approval.
 
