@@ -8,8 +8,8 @@ We have been commissioned to build a travel community, code-named **Project Vaga
 
 The client has provided basic wireframes and user stories. In some cases, these requirements may be vague or incomplete.
 
-* [Wireframes](./wireframes)
-* [User Stories](./user-stories)
+* [Wireframes](./wireframes.png)
+* [User Stories](./user-stories.md)
 
 ## Expectations
 
@@ -19,7 +19,7 @@ The client contract consists of four core sprints and four bonus sprints. Each s
 
 You will work in groups of 3-4, and we expect you to **pair program** for the majority of the time you're writing code.
 
-During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and your next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example Trello board</a>).
+During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example Trello board</a>).
 
 Commit changes at least once for each user story. Consider creating **automated tests** or even implementing TDD for any complex application behavior.
 
