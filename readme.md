@@ -48,7 +48,7 @@ Use the **<a href="https://github.com/sf-wdi-24/modules/tree/master/how-tos/gith
 
 5. **What milestones are you and your group members interested in working on?** How can you effectively delegate the work into pairs so that each group member is interested, challenged, and productive?
 
-<!-- ## Groups
+## Groups
 
 Each group has an assigned instructor or DIR, who will act as your client as well as give technical support during instructor-group meetings.
 
@@ -76,7 +76,7 @@ Each group has an assigned instructor or DIR, who will act as your client as wel
 
 * Adam
 * Cynthia
-* Trung -->
+* Trung
 
 ## Presentation
 
