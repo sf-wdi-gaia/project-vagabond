@@ -52,31 +52,10 @@ Use the **<a href="https://github.com/sf-wdi-24/modules/tree/master/how-tos/gith
 
 Each group has an assigned instructor or DIR, who will act as your client as well as give technical support during instructor-group meetings.
 
-#### Group 1 - Ben
+#### Group \#1 - Instructor
+* Student
+* Student
 
-* Eddy
-* Michael
-* Victoria
-
-#### Group 2 - Cameron
-
-* Alan
-* Carlos
-* Steven
-* Zohar
-
-#### Group 3 - Erik
-
-* André
-* Dave
-* John
-* Stanley
-
-#### Group 4 - Zoe
-
-* Adam
-* Cynthia
-* Trung
 
 ## Presentation
 
