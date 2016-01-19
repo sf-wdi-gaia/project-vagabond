@@ -25,7 +25,7 @@ Commit changes at least once for each user story. Consider creating **automated 
 
 Put effort into your **design**. Use a CSS framework (e.g. Bootstrap), partials, and some custom CSS or Sass/Less.
 
-Use the **<a href="https://github.com/sf-wdi-24/modules/tree/master/how-tos/github/collaboration-workflow" target="_blank">git collaborator scenario</a>, feature branches, and pull requests**.
+Use the **[git collaborator scenario](./git-collaboration-workflow.md)</a>, feature branches, and pull requests**.
 
 **Refactor** your code after each sprint, considering:
 
