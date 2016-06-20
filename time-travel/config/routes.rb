@@ -10,6 +10,12 @@ Rails.application.routes.draw do
 
   get '/users/:id', to: "users#show", as: "user_id"
 
+  ####route for user sign_in#####
+
+  get '/signin', to: "sessions#new"
+
+  post '/sessions', to: 'sessions#create'
+
 
 
 end

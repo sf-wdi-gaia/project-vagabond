@@ -9,11 +9,20 @@ class UsersController < ApplicationController
   	render :new
   end
 
-  def create
-  	user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
-  	@user=User.create(user_params)
+  # def create
+  # 	user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
+  # 	@user=User.create(user_params)
 
-  	redirect_to(user_id_path(@user.id))
+  # 	###uses as from routes page to redirect user to profile page###
+  # 	###resolves :id error during redirect###
+  # 	redirect_to(user_id_path(@user.id))
+  # end
+
+   def create
+    user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
+    @user = User.create(user_params)
+    login(@user) # <-- login the user
+    redirect_to "/users/#{@user.id}" # <-- go to show
   end
 
   def show
