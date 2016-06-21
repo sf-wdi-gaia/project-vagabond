@@ -23,13 +23,13 @@ Rails.application.routes.draw do
 
   get '/posts/:id', to: 'posts#show', as: 'show_post'
 
-  get '/posts/:id/edit', to: 'posts#edit'
+  get '/posts/:id/edit', to: 'posts#edit', as: 'edit_post'
 
-  post '/posts', to: 'posts#create'
+  # post '/posts', to: 'posts#create'
 
-  put '/posts/:id', to: 'posts#update'
-
-  post '/posts/:id', to: 'posts#destroy'
+  # put '/posts/:id', to: 'posts#update'
+  patch '/posts/:id', to: 'posts#update'
+  # post '/posts/:id', to: 'posts#destroy'
 
 end
 

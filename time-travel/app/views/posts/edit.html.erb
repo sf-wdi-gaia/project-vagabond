@@ -1,6 +1,6 @@
 Edit Page
 
-<%= form_for @post do |f| %>
+<%= form_for @post, url: "/posts/#{@post.id}" do |f| %>
   <div>
     <%= f.text_field :title, value: @post.title %>
   </div>
