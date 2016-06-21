@@ -26,7 +26,7 @@ class PostsController < ApplicationController
   	@post = Post.find(params[:id])
     post_params = params.require(:post).permit(:title, :description, :image, :user_id, :period_id, :post_date)
     if @post.update_attributes(post_params)
-  	redirect_to show_post_path(@post)
+  	redirect_to post_path(@post)
     #   render edit_post_path
     end
   end
@@ -34,6 +34,7 @@ class PostsController < ApplicationController
   def destroy
   	@post = Post.find(params[:id])
   	@post.destroy
+    redirect_to '/posts'
   end
 
 end
