@@ -18,6 +18,18 @@ Rails.application.routes.draw do
   #sessions
   post '/sessions', to: 'sessions#create'
 
+
+  delete "/sessions", to: "sessions#destroy"
+
+
+  ###route for user edit###
+  get "/users/:id/edit", to: "users#edit"
+
+  patch "/users/edit/:id", to: "users#update"
+
+
+
+
   #posts
   get '/posts', to: 'posts#index', as: 'posts'
 
@@ -27,6 +39,7 @@ Rails.application.routes.draw do
 
   # post '/posts', to: 'posts#create'
 
+  ###update posts###
   # put '/posts/:id', to: 'posts#update'
   patch '/posts/:id', to: 'posts#update'
   # post '/posts/:id', to: 'posts#destroy'
