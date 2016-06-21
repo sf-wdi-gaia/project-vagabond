@@ -8,6 +8,7 @@
 
 User.destroy_all
 Post.destroy_all
+Period.destroy_all
 
 User.create([
   {first_name:"Justin",last_name:"Timberlake",email:"jt@jt.com",image:"http://donatered-asset.s3.amazonaws.com/assets/default/default_user-884fcb1a70325256218e78500533affb.jpg"},
@@ -36,4 +37,13 @@ image:"http://www.mitchellteachers.org/WorldHistory/AncientGreece/Images/Alexand
 @posts.each do |post|
   post.save
 end
+
+Period.create([
+	{name: "Roaring Twenties", start_date:Date.new()
+
+	}
+
+	])
+
+
 

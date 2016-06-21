@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
 
-  #user routes
+  #USERS
   get '/', to: 'users#home', as: 'home'
 
   #route for sign up#
@@ -30,19 +30,24 @@ Rails.application.routes.draw do
 
 
 
-  #posts
+  #POSTS
   get '/posts', to: 'posts#index', as: 'posts'
 
   get '/posts/:id', to: 'posts#show', as: 'show_post'
 
   get '/posts/:id/edit', to: 'posts#edit', as: 'edit_post'
 
-  # post '/posts', to: 'posts#create'
-
   ###update posts###
   # put '/posts/:id', to: 'posts#update'
   patch '/posts/:id', to: 'posts#update'
   # post '/posts/:id', to: 'posts#destroy'
+
+
+  #PERIODS
+  #gets an index of all the periods
+  get '/periods', to: 'periods#index'
+  # #gets one period (show page)
+  get '/periods/:id', to: 'periods#show'
 
 end
 
