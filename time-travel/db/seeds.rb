@@ -6,9 +6,9 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.destroy_all
-Post.destroy_all
 Period.destroy_all
+Post.destroy_all
+User.destroy_all
 
 User.create([
   {first_name:"Justin",last_name:"Timberlake",email:"jt@jt.com",image:"http://donatered-asset.s3.amazonaws.com/assets/default/default_user-884fcb1a70325256218e78500533affb.jpg"},
@@ -39,11 +39,12 @@ image:"http://www.mitchellteachers.org/WorldHistory/AncientGreece/Images/Alexand
 end
 
 Period.create([
-	{name: "Roaring Twenties", start_date:Date.new()
-
-	}
-
-	])
+ {name:"Roaring Twenties",start_time:Date.new(1920), end_time:Date.new(1929)},
+ {name:"Machine Age",start_time:Date.new(1880), end_time:Date.new(1945)},
+ {name:"World War II",start_time:Date.new(1939), end_time:Date.new(1945)},
+ {name:"World War I",start_time:Date.new(1914), end_time:Date.new(1918)},
+ {name:"War In Iraq",start_time:Date.new(2003), end_time:Date.new(2011)}
+]);
 
 
 
