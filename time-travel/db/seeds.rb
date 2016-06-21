@@ -6,6 +6,8 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+
+Period.destroy_all
 Post.destroy_all
 User.destroy_all
 
@@ -36,4 +38,14 @@ image:"http://www.mitchellteachers.org/WorldHistory/AncientGreece/Images/Alexand
 @posts.each do |post|
   post.save
 end
+
+Period.create([
+ {name:"Roaring Twenties",start_time:Date.new(1920), end_time:Date.new(1929)},
+ {name:"Machine Age",start_time:Date.new(1880), end_time:Date.new(1945)},
+ {name:"World War II",start_time:Date.new(1939), end_time:Date.new(1945)},
+ {name:"World War I",start_time:Date.new(1914), end_time:Date.new(1918)},
+ {name:"War In Iraq",start_time:Date.new(2003), end_time:Date.new(2011)}
+]);
+
+
 
