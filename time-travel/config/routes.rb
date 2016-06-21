@@ -17,6 +17,14 @@ Rails.application.routes.draw do
   post '/sessions', to: 'sessions#create'
 
 
+  ###route for user edit###
+  get "/users/:id/edit", to: "users#edit"
+
+  patch "/users/edit/:id", to: "users#update"
+
+
+
+
 
 end
 
