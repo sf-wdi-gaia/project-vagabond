@@ -1,7 +1,12 @@
 class PostsController < ApplicationController
 
+  def new
+    @post = Post.new
+    render :new
+  end
+
   def index
-    @posts = Post.all
+    @posts = Post.all.order(:post_date)
     render :index
   end
 
@@ -11,8 +16,11 @@ class PostsController < ApplicationController
   end
 
   def create
-  	post_params = params.require(:post).permit(:title, :description, :image, :user_id, :period_id, :post_date)
+  	post_params = params.require(:post).permit(:title, :description, :image, :period_id, :post_date)
     @post = Post.create(post_params)
+    @user = current_user
+    @user.posts << @post
+    redirect_to '/posts'
   end
 
   def edit
