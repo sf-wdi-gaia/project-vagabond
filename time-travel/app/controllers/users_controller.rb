@@ -30,6 +30,4 @@ class UsersController < ApplicationController
     render :show
   end
 
-
-
 end
