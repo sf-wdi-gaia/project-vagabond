@@ -29,8 +29,10 @@ Rails.application.routes.draw do
 
 
   #posts
-  resources :posts  # added to straighten out original, non-standard paths
+  resources :posts, except: :destroy  # added to straighten out original, non-standard paths
 
+
+  delete '/posts/:id', to: 'posts#destroy', as: 'delete_post'
   # get '/posts', to: 'posts#index', as: 'posts'
   # get '/posts/:id', to: 'posts#show', as: 'show_post'
   # get '/posts/:id/edit', to: 'posts#edit', as: 'edit_post'
