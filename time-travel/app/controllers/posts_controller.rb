@@ -18,13 +18,17 @@ class PostsController < ApplicationController
 
   def edit
     @post = Post.find(params[:id])
-    render :update
+    render :'edit'
   end
 
   def update
+    @post.save
   	@post = Post.find(params[:id])
-  	@post.save
+    if @post.update_attributes(post_params)
   	redirect_to 'show_post_route'
+    else
+      render 'edit'
+    end
   end
 
   def destroy
@@ -33,3 +37,13 @@ class PostsController < ApplicationController
   end
 
 end
+
+# private
+
+#     def user_params
+#       params.require(:user).permit(:email, :password,
+#                                    :password_confirmation)
+#     end
+# end
+
+##TESTING
