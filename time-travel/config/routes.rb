@@ -16,6 +16,8 @@ Rails.application.routes.draw do
 
   post '/sessions', to: 'sessions#create'
 
+  delete "/sessions", to: "sessions#destroy"
+
 
   ###route for user edit###
   get "/users/:id/edit", to: "users#edit"
