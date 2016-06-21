@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.post-image-small {
+  max-width: 200px;
+  max-height: 200px;
+}

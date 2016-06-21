@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160620200701) do
+ActiveRecord::Schema.define(version: 20160620212620) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160620200701) do
     t.integer  "period_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
+    t.date     "post_date"
   end
 
   add_index "posts", ["period_id"], name: "index_posts_on_period_id", using: :btree
