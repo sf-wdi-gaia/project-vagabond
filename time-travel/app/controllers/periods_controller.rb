@@ -1,9 +1,9 @@
 class PeriodsController < ApplicationController
 	
   before_action :require_login
-	
-  def index
-		@periods = Period.all
+
+	def index
+		@periods = Period.all.order(start_time: :desc)
 		render :index
 	end
 
@@ -20,6 +20,8 @@ class PeriodsController < ApplicationController
 	def create
   		period_params = params.require(:period).permit(:name, :description, :image, :start_time, :end_time)
   		@period = Period.create(period_params)
+      @user = current_user
+      @user.periods << @period
       redirect_to '/periods'
   	end
 
