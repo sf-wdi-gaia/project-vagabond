@@ -27,8 +27,8 @@ before_action :require_login, :except => [:index, :show]
 
   	def edit
   		@period = Period.find(params[:id])
-  		if current_user.id != @user.id 
-        redirect_to '/periods/:id'
+  		if current_user.id != params[:id] 
+        redirect_to '/periods/' + @period.id.to_s
       else
         render :edit
       end
