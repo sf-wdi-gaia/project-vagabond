@@ -1,7 +1,7 @@
 class PeriodsController < ApplicationController
 	
 	def index
-		@periods = Period.all
+		@periods = Period.all.order(start_time: :desc)
 		render :index
 	end
 
