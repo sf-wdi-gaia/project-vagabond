@@ -1,4 +1,6 @@
 class UsersController < ApplicationController
+  
+  before_action :require_login, :only => [:edit, :show]
 
   def home
     render :index
@@ -8,15 +10,6 @@ class UsersController < ApplicationController
   	@user = User.new
   	render :new
   end
-
-  # def create
-  # 	user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
-  # 	@user=User.create(user_params)
-
-  # 	###uses as from routes page to redirect user to profile page###
-  # 	###resolves :id error during redirect###
-  # 	redirect_to(user_id_path(@user.id))
-  # end
 
    def create
     user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
@@ -35,7 +28,11 @@ class UsersController < ApplicationController
 
   def edit
   	@user = User.find(params[:id])
-  	render :edit
+    if current_user.id != @user.id 
+      redirect_to '/users/' + @user.id.to_s
+    else
+  	  render :edit
+    end
   end
 
   def update

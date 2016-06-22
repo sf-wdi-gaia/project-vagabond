@@ -1,6 +1,6 @@
 class PeriodsController < ApplicationController
-	
-  before_action :require_login
+
+before_action :require_login, :except => [:index, :show]
 
 	def index
 		@periods = Period.all.order(start_time: :desc)
@@ -27,7 +27,11 @@ class PeriodsController < ApplicationController
 
   	def edit
   		@period = Period.find(params[:id])
-  		render :edit
+  		if current_user.id != @user.id 
+        redirect_to '/periods/:id'
+      else
+        render :edit
+      end
   	end
 
   	def update
@@ -40,7 +44,11 @@ class PeriodsController < ApplicationController
 
   	def destroy
   		@period = Period.find(params[:id])
-  		@period.destroy
-  	end
-
+  		if current_user.id != @user.id 
+        redirect_to '/periods/:id'
+      else
+        @period.destroy
+      end
+    end
+    
 end

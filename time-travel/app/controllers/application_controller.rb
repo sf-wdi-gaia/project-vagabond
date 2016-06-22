@@ -15,6 +15,8 @@ class ApplicationController < ActionController::Base
     if !current_user
       redirect_to '/signin'
     end
+  end
 
   helper_method :current_user
+
 end
