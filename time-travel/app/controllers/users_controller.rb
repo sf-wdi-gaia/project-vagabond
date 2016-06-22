@@ -18,8 +18,7 @@ class UsersController < ApplicationController
       login(@user) # <-- login the user
       redirect_to "/users/#{@user.id}" # <-- go to show
     else
-      redirect_to '/signup'
-      flash[:error] = "Email already exists"
+      redirect_to '/signup', flash: {error: @user.errors.full_messages.to_sentence}
     end
   end
 

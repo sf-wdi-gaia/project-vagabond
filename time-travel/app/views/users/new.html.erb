@@ -18,15 +18,15 @@
 
   <div>
     <%= f.text_field :email, placeholder: "Email" %>
+    <%= f.text_field :email_confirmation, placeholder: "Confirm Email" %>
 
   </div>
     <%= f.text_field :image, placeholder: "Image URL" %>
   <div>
-    
-  </div>
 
   <div>
     <%= f.password_field :password, placeholder: "Password" %>
+    <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %>
   </div>
 
 <%=f.submit "Sign Up" %>
