@@ -1,6 +1,8 @@
 class PeriodsController < ApplicationController
 	
-	def index
+  before_action :require_login
+	
+  def index
 		@periods = Period.all
 		render :index
 	end
@@ -38,4 +40,5 @@ class PeriodsController < ApplicationController
   		@period = Period.find(params[:id])
   		@period.destroy
   	end
+
 end
