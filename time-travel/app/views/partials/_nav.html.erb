@@ -2,16 +2,13 @@
 <%= link_to "Home", '/' %>
 
 <% if current_user != nil %>
-
-	<%= link_to "Profile", user_id_path(current_user) %>
-
-	<%= link_to "Logout", '/sessions', method: :delete %> 
+  <%= link_to "Create Time Range" %>
+  <%= link_to "Create Event", '/posts/new'  %> 
+  <%= link_to "Profile", user_id_path(current_user) %>
+  <%= link_to "Logout", '/sessions', method: :delete %> 
 <% else %>
-
-	<%= link_to "Signup", '/signup' %>
-
-<span>or</span>
-
-<%= link_to "Login", '/signin' %>
-
+  <%= link_to "Signup", '/signup' %>
+  <span>or</span>
+  <%= link_to "Login", '/signin' %>
 <% end %>
+<br>

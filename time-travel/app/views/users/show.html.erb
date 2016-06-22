@@ -1,9 +1,22 @@
 <div>
   Welcome, <%= @user.first_name %>
 </div>
-
+<div>
+<%= image_tag(@user.image, :alt => "user image") %>
+</div>
 <%= @user.created_at %>
+
 
 #profile picture
 <%= image_tag(@user.image, :alt => "user image") %>
 
+
+
+<% @posts.each do |post| %>
+<hr>
+<img class="post-image-small" src="<%= post.image %>" alt="image for post">
+<h4><%= link_to post.title, post_path(post) %></h4>
+<h6><%= post.post_date %>  </h6>
+<h6><%= post.description %> </h6>
+
+<% end %>
