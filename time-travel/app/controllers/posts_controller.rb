@@ -21,6 +21,13 @@ class PostsController < ApplicationController
     @user = current_user
     @user.posts << @post
     redirect_to '/posts'
+
+    periods = Period.all
+    periods.each do |period| 
+      if period.start_time <= @post.post_date && period.end_time >= @post.post_date
+        period.posts.push(@post) 
+     end
+   end
   end
 
   def edit
@@ -44,13 +51,3 @@ class PostsController < ApplicationController
   end
 
 end
-
-# private
-
-#     def user_params
-#       params.require(:user).permit(:email, :password,
-#                                    :password_confirmation)
-#     end
-# end
-
-##TESTING
