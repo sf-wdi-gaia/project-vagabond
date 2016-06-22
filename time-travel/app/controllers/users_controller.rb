@@ -13,9 +13,14 @@ class UsersController < ApplicationController
 
    def create
     user_params = params.require(:user).permit(:first_name, :last_name, :email, :password)
-    @user = User.create(user_params)
-    login(@user) # <-- login the user
-    redirect_to "/users/#{@user.id}" # <-- go to show
+    @user = User.new(user_params)
+    if @user.save
+      login(@user) # <-- login the user
+      redirect_to "/users/#{@user.id}" # <-- go to show
+    else
+      redirect_to '/signup'
+      flash[:error] = "Email already exists"
+    end
   end
 
   def show

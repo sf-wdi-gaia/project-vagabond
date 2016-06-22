@@ -2,8 +2,6 @@ class User < ActiveRecord::Base
 	validates :email, uniqueness: true
 	validates :email, confirmation: true
 	validates :password, confirmation: true
-	validates_confirmation_of :password
-	validates_confirmation_of :email
 
 	has_secure_password
 
