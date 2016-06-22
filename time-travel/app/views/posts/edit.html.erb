@@ -1,0 +1,17 @@
+Edit Page
+
+<%= form_for @post do |f| %>
+  <div>
+    <%= f.text_field :title, value: @post.title %>
+  </div>
+  <div>
+    <%= f.text_area :description, value: @post.description %>
+  </div>
+  <div>
+    <%= f.text_field :image, value: @post.image %>
+  </div>
+  <div>
+    <%= f.text_field :post_date, value: @post.post_date %>
+  </div>
+  <%= f.submit "Save Post" %>
+<% end %>
