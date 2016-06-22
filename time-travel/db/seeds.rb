@@ -7,8 +7,8 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 
-Period.destroy_all
 Post.destroy_all
+Period.destroy_all
 User.destroy_all
 
 User.create([
