@@ -50,17 +50,23 @@ Rails.application.routes.draw do
 
  #gets all periods
  get '/periods', to: 'periods#index', as: 'period_index'
+ 
+#gets form to create new period
+ get '/periods/new', to: 'periods#new', as: 'period_new'
+
  #posts new period to period index
  post '/periods', to: 'periods#create'
- #gets form to creaste new period
- get '/periods/new', to: 'periods#new', as: 'period_new'
+ 
  #gets form to edit period
  get '/periods/:id/edit', to: 'periods#edit'
+
  #gets individual period
  get '/periods/:id', to: 'periods#show'
+
  #updates individual period
  patch '/periods/:id', to: 'periods#update'
- #destroys individual period
+ 
+ #destryos individual period
  delete '/periods/:id', to: 'periods#destroy'
 
 end

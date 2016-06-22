@@ -6,7 +6,15 @@
 </div>
 <%= @user.created_at %>
 
+
 <div>Your Visit Places</div>
+
+
+#profile picture
+<%= image_tag(@user.image, :alt => "user image") %>
+
+
+
 <% @posts.each do |post| %>
 <hr>
 <img class="post-image-small" src="<%= post.image %>" alt="image for post">
