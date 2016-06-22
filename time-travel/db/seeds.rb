@@ -27,8 +27,18 @@ image:"http://www.telegraph-office.com/bw_images/bunnell_mechanical.jpg",post_da
 image:"http://www.mitchellteachers.org/WorldHistory/AncientGreece/Images/AlexanderSphinxGizaTrans.jpg",post_date:Date.new(-332,1,1)}
 ]);
 
+
+Period.create([
+ {name:"Machine Age",start_time:Date.new(1880), end_time:Date.new(1945)},
+ {name:"World War I",start_time:Date.new(1914), end_time:Date.new(1918)},
+ {name:"Roaring Twenties",start_time:Date.new(1920), end_time:Date.new(1929)},
+ {name:"Victorian Era",start_time:Date.new(1837), end_time:Date.new(1901)},
+ {name:"Ancient Times",start_time:Date.new(-4700), end_time:Date.new(425)}
+]);
+
 @users = User.all
 @posts = Post.all
+@periods = Period.all
 
 @posts[0].user_id = @users[0].id
 @posts[1].user_id = @users[0].id
@@ -36,16 +46,24 @@ image:"http://www.mitchellteachers.org/WorldHistory/AncientGreece/Images/Alexand
 @posts[3].user_id = @users[1].id
 
 @posts.each do |post|
+  @periods.each do |period|
+    if period.start_time < post.post_date && period.end_time >= post.post_date
+      post.period_id = period.id
+    end
+  end
   post.save
 end
 
-Period.create([
- {name:"Roaring Twenties",start_time:Date.new(1920), end_time:Date.new(1929)},
- {name:"Machine Age",start_time:Date.new(1880), end_time:Date.new(1945)},
- {name:"World War II",start_time:Date.new(1939), end_time:Date.new(1945)},
- {name:"World War I",start_time:Date.new(1914), end_time:Date.new(1918)},
- {name:"War In Iraq",start_time:Date.new(2003), end_time:Date.new(2011)}
-]);
+@periods[0].user_id = @users[0].id
+@periods[1].user_id = @users[0].id
+@periods[2].user_id = @users[1].id
+@periods[3].user_id = @users[1].id
+@periods[4].user_id = @users[0].id
+
+@periods.each do |period|
+  period.save
+end
+
 
 
 
