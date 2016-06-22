@@ -4,12 +4,18 @@
 	<% @periods.each do |period| %>
 		<li> <%= period.name %> </li>
 
-			<ul>
-				<li><%= period.description %></li>
-				<li><%= period.start_time %></li>
-				<li><%= period.end_time %></li>
-				<li><%= :period %></li>
-			</ul>
+		<ul>
+			<li><%= period.description %></li>
+			<li><%= period.start_time %></li>
+			<li><%= period.end_time %></li>
+		</ul>
+    
+    <ul>
+      <% period.posts.each do |post|%>
+      <li><%=post.title%></li>
+      <%end%>
+    </ul>
 
 </ul>
 <% end %>
+
