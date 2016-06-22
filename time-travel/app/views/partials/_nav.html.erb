@@ -2,8 +2,8 @@
 <%= link_to "Home", '/' %>
 
 <% if current_user != nil %>
-<nav>
-  <%= link_to "Create Time Range" %>
+
+  <%= link_to "Create Time Range", '/periods/new' %>
   <%= link_to "Create Event", '/posts/new'  %> 
   <%= link_to "Profile", user_id_path(current_user) %>
   <%= link_to "Logout", '/sessions', method: :delete %> 

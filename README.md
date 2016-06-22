@@ -1,29 +1,49 @@
-# <img src="https://cloud.githubusercontent.com/assets/7833470/10899314/63829980-8188-11e5-8cdd-4ded5bcb6e36.png" height="60"> Project Vagabond
+# Time Travelog
+
+
 
 ## Brief
 
-We have been commissioned to build a travel community, code-named **Project Vagabond** for now, for users to share tips (AKA posts) about their favorite locations around the world.
+The world is an interesting place...
+And time!  Our app gives the discriminating Time Traveller a place to record the greatest moments through history in various places on Earth.  Ask not where, but when!!
 
-## Client Contract
+## Project Planning
 
 The client has provided basic wireframes and user stories. In some cases, these requirements may be vague or incomplete.
 
-* [Wireframes](./wireframes.png)
-* [User Stories](./user-stories.md)
+[User Stories](./user-stories.md)
+
+ <details><summary>Wireframes</summary>
+![Initial Wireframe](planning/BasicWireframe.jpg)
+![Wireframe 2.0](planning/WireframeSprint2.jpg)
+![First Entity Relationship Diagram](planning/InitialModel.jpg)
+![Next ERD, based on client update](planning/NewERD.jpg)
+
+ </details>
+ 
+## Project Tracking
+ 
+ [Trello](https://trello.com/b/ne3nmsgj/time-travel-app)
+ 
+ [Project calendar](https://docs.google.com/spreadsheets/d/1_JsJJkhEbKozaXYS46MyXUc1NyH7Gu0AEqAUm_fgLlE/edit#gid=0)
+
+
+<hr>
+# Original Task
 
 ## Expectations
 
-The client contract consists of three core sprints and four bonus sprints. Each sprint contains a set of user stories. You may not complete all of the sprints within the time period, and that's ok. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
 
 **IMPORTANT:** You may not begin a new sprint or start on a bonus without client approval.
 
-You will work in groups of 3-4, and we expect you to **pair program** for the majority of the time you're writing code.
+**pair program**
 
-During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example Trello board</a>).
+communicate your current status 
+Use **Trello** to organize 
+Commit changes at least once for each user story. 
+Consider creating **automated tests** or even implementing TDD for any complex application behavior.
 
-Commit changes at least once for each user story. Consider creating **automated tests** or even implementing TDD for any complex application behavior.
-
-Put effort into your **design**. Use a CSS framework (e.g. Bootstrap), partials, and some custom CSS or Sass/Less.
+**Design**. Use a CSS framework (e.g. Bootstrap), partials, and some custom CSS or Sass/Less.
 
 Use the **[git collaborator scenario](./git-collaboration-workflow.md)</a>, feature branches, and pull requests**.
 
@@ -38,45 +58,19 @@ Use the **[git collaborator scenario](./git-collaboration-workflow.md)</a>, feat
 
 ## Questions to Ask Yourselves
 
-1. **Are you all clear about what the client wants?** Identify vague areas. Seek clarification in any cases where you feel less confident about your interpretation of the client's vision.
-
-2. **What will the UX/UI flow be?** Hammer out any areas of ambiguity in the wireframes
-
-3. **Which models do you need to implement?** Create an ERD for the client to reference.
-
-4. **What are the major milestones or components that you need to complete?** How can these be turned into tasks that group members can complete in pairs? Where do these milestones overlap and how will those related tasks be managed?
-
-5. **What milestones are you and your group members interested in working on?** How can you effectively delegate the work into pairs so that each group member is interested, challenged, and productive?
-
-## Groups
-
-Each group has an assigned instructor or DIR, who will act as your client as well as give technical support during instructor-group meetings.
+1. **Are you all clear about what the client wants?** 
+2. **What will the UX/UI flow be?** 
+3. **Which models do you need to implement?** Create an ERD
+4. **What are the major milestones or components that you need to complete?** turned into tasks
+Where do these milestones overlap and how will those related tasks be managed?
+5. **What milestones are you and your group members interested in working on?** 
+delegate the work so that each is interested, challenged, and productive?
 
 #### Group \#1 - Annabelle
 * Michael N
 * Ben
 * Vanessa
 * Jen
-
-#### Group \#2 - Alex
-* Matt L
-* Matt S
-* Sam
-* Val
-
-#### Group \#3 - Brianna
-* Anthony
-* Mike C
-* Kate
-* Wayne
-
-#### Group \#4 - Ben
-* Emilio
-* Camila
-* Kabah
-* Min
-
-
 
 ## Presentation
 
