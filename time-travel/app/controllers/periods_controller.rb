@@ -10,9 +10,18 @@ class PeriodsController < ApplicationController
     	render :show
 	end
 
+  def new
+    @period = Period.new
+    render :new
+  end
+
+
 	def create
   		period_params = params.require(:period).permit(:name, :start_time, :end_time)
   		@period = Period.create(period_params)
+      @user = current_user
+      @user.periods << @period
+      redirect_to '/periods'
   	end
 
   	def edit
