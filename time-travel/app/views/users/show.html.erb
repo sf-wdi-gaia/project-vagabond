@@ -7,6 +7,9 @@
 <%= @user.created_at %>
 
 
+<div>Your Visit Places</div>
+
+
 #profile picture
 <%= image_tag(@user.image, :alt => "user image") %>
 
@@ -18,5 +21,15 @@
 <h4><%= link_to post.title, post_path(post) %></h4>
 <h6><%= post.post_date %>  </h6>
 <h6><%= post.description %> </h6>
+<%end%>
+
+<div>Time Adventures</div>
+
+<% @periods.each do |period| %>
+<hr>
+<div><%=period.name%></div>
+<div><%=period.start_time%></div>
+
+
 
 <% end %>
