@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160621235202) do
+ActiveRecord::Schema.define(version: 20160622203942) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "period_posts", force: :cascade do |t|
+    t.integer  "post_id"
+    t.integer  "period_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "period_posts", ["period_id"], name: "index_period_posts_on_period_id", using: :btree
+  add_index "period_posts", ["post_id"], name: "index_period_posts_on_post_id", using: :btree
 
   create_table "periods", force: :cascade do |t|
     t.string   "name"
@@ -34,13 +44,11 @@ ActiveRecord::Schema.define(version: 20160621235202) do
     t.string   "description"
     t.string   "image"
     t.integer  "user_id"
-    t.integer  "period_id"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.date     "post_date"
   end
 
-  add_index "posts", ["period_id"], name: "index_posts_on_period_id", using: :btree
   add_index "posts", ["user_id"], name: "index_posts_on_user_id", using: :btree
 
   create_table "users", force: :cascade do |t|
@@ -53,7 +61,8 @@ ActiveRecord::Schema.define(version: 20160621235202) do
     t.datetime "updated_at",      null: false
   end
 
+  add_foreign_key "period_posts", "periods"
+  add_foreign_key "period_posts", "posts"
   add_foreign_key "periods", "users"
-  add_foreign_key "posts", "periods"
   add_foreign_key "posts", "users"
 end

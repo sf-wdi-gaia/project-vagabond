@@ -1,0 +1,4 @@
+class PeriodPostsController < ApplicationController
+
+
+end

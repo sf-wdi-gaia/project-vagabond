@@ -1,0 +1,2 @@
+module PeriodPostsHelper
+end
