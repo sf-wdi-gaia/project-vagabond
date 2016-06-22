@@ -1,0 +1,33 @@
+Edit Time Period
+
+
+<%= form_for @period, url: '/periods/edit/#{@period.id}',  method: :patch do |f| %>
+  
+  <label>Time Period Name</label>
+  <div>
+    <%= f.text_field :name, value: @period.name %>
+  </div>
+  
+  <label>Description</label>
+  <div>
+    <%= f.text_area :description, value: @period.description %>
+  </div>
+  
+  <label> Date (YYYY/MM/DD)</label>
+  <div>
+    <%= f.text_field :start_time, value: @period.start_time %>
+  </div>
+  
+  <label> Date (YYYY/MM/DD)</label>
+  <div>
+    <%= f.text_field :end_time, value: @period.end_time %>
+  </div>
+
+  <label>Image</label>	
+  <div>
+    <%= f.text_field :image, value: @period.image %>
+  </div>
+  <%= f.submit "Edit Time Period" %>
+<% end %>
+    
+    
