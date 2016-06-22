@@ -10,9 +10,15 @@ class PeriodsController < ApplicationController
     	render :show
 	end
 
+  def new
+    @period = Period.new
+    render :new
+  end
+
 	def create
-  		period_params = params.require(:period).permit(:name, :start_time, :end_time)
+  		period_params = params.require(:period).permit(:name, :description, :image, :start_time, :end_time)
   		@period = Period.create(period_params)
+      redirect_to '/periods'
   	end
 
   	def edit
@@ -24,7 +30,7 @@ class PeriodsController < ApplicationController
   		@period = Period.find(params[:id])
     	period_params = params.require(:post).permit(:title, :description, :image, :user_id, :period_id, :post_date)
     	if @period.update_attributes(period_params)
-  			redirect_to '/period/:id'
+  			redirect_to '/periods/:id'
     	end
   	end
 

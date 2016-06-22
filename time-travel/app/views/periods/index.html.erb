@@ -3,8 +3,10 @@
 <ul>
 	<% @periods.each do |period| %>
 		<li> <%= period.name %> </li>
-			<li>period.start_time</li>
-			<li>period.end_time</li>
- 
+			<ul>
+				<li><%= period.description %></li>
+				<li><%= period.start_time %></li>
+				<li><%= period.end_time %></li>
+			</ul>
 </ul>
 <% end %>
