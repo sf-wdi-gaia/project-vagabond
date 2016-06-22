@@ -1,9 +1,10 @@
 class User < ActiveRecord::Base
-	validates :email, uniqueness: true, presence: true, confirmation: true
-	validates :email_confirmation, presence: true  
+	validates :email, uniqueness: true, confirmation: true
 
+	
 	has_secure_password
-	validates :password_confirmation, presence: true
+
+	
 
 	def self.confirm(params)
 		@user = User.find_by({email: params[:email]})
@@ -14,3 +15,7 @@ class User < ActiveRecord::Base
 	has_many :periods
 
 end
+
+
+# <%= f.password_field :password_confirmation, placeholder: "Confirm Password" %> 
+# validates :password_confirmation, presence: true
