@@ -9,7 +9,7 @@ before_action :require_login, :except => [:index, :show]
 
 	def show
 		@period = Period.find(params[:id])
-    @posts = period.posts
+    @posts = @period.posts
     render :show
 	end
 
