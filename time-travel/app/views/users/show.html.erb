@@ -26,6 +26,8 @@
 <div><%=period.name%></div>
 <div><%=period.start_time%></div>
 
-
-
 <% end %>
+
+	<% if current_user.id == @user.id %>
+	  <%= button_to "Delete", user_id_path, :method =>:delete %>
+    <% end %>

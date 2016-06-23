@@ -49,4 +49,11 @@ class UsersController < ApplicationController
   	end
   end
 
+  def destroy
+    @user = User.find(params[:id])
+    @user.destroy    
+    redirect_to '/'
+    # do not forget to add dependent: :destroy to user model so that posts
+    # associated with user are deleted, along with user.
+  end
 end
