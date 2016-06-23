@@ -1,0 +1,50 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.post-image-small {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.nav >*{
+	margin-right: 10px;
+}
+
+.period {
+  width: 100%;
+}
+
+.period-top {
+  width: 15%;
+  display: inline-block;
+  float: left;
+  clear: left;
+}
+
+
+.period-body {
+  width: 80%;
+  display: inline-block;
+  float: left;
+  margin-left: 10px;
+  clear: right;
+}
+
+.post {
+  width: 80%;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  clear: left;
+}
