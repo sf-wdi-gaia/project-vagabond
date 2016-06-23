@@ -61,7 +61,7 @@ Rails.application.routes.draw do
  post '/periods', to: 'periods#create'
  
  #gets form to edit period
- get '/periods/:id/edit', to: 'periods#edit'
+ get '/periods/:id/edit', to: 'periods#edit', as: 'period_edit'
 
  #gets individual period
  get '/periods/:id', to: 'periods#show'
