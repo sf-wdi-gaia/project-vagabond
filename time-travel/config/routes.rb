@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   # users
   post '/users', to: "users#create"
 
+  #to do: change user_id as to 'user' or identify by action
   get '/users/:id', to: "users#show", as: "user_id"
+
+  delete '/users/:id', to: "users#destroy"
 
   #sign in/sesssions#
   get '/signin', to: "sessions#new"
