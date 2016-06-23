@@ -10,7 +10,10 @@ Rails.application.routes.draw do
   # users
   post '/users', to: "users#create"
 
+  #to do: change user_id as to 'user' or identify by action
   get '/users/:id', to: "users#show", as: "user_id"
+
+  delete '/users/:id', to: "users#destroy"
 
   #sign in/sesssions#
   get '/signin', to: "sessions#new"
@@ -58,7 +61,7 @@ Rails.application.routes.draw do
  post '/periods', to: 'periods#create'
  
  #gets form to edit period
- get '/periods/:id/edit', to: 'periods#edit'
+ get '/periods/:id/edit', to: 'periods#edit', as: 'period_edit'
 
  #gets individual period
  get '/periods/:id', to: 'periods#show'

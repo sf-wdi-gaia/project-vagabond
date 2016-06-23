@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
 		@user.try(:authenticate, params[:password])
 	end
 
-	has_many :posts
+	has_many :posts, dependent: :destroy
 	has_many :periods
 
 end
