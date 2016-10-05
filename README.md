@@ -11,7 +11,7 @@ The client has provided basic wireframes and user stories. In some cases, these 
 * [Wireframes](./wireframes.png)
 * [User Stories](./user-stories.md)
 
-## Expectations
+## Process
 
 The client contract consists of three core sprints and four bonus sprints. Each sprint contains a set of user stories. You may not complete all of the sprints within the time period, and that's ok. **The goal is to gain experience working on a development project in a group while navigating a client's feature list.**
 
@@ -19,18 +19,18 @@ The client contract consists of three core sprints and four bonus sprints. Each 
 
 You will work in groups of 3-4, and we expect you to **pair program** for the majority of the time you're writing code.
 
-During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks (<a href="https://trello.com/b/JPdt327u/vagabond" target="_blank">example Trello board</a>).
+During morning scrums and in smaller check-ins throughout the day, clearly communicate your current status and next steps to your teammates. Use a kanban-style scrum board such as **Trello** to organize tasks ([example Trello board](https://trello.com/b/JPdt327u/vagabond)).
 
 Commit changes at least once for each user story. Consider creating **automated tests** or even implementing TDD for any complex application behavior.
 
 Put effort into your **design**. Use a CSS framework (e.g. Bootstrap), partials, and some custom CSS or Sass/Less.
 
-Use the **[git collaborator scenario](./git-collaboration-workflow.md)</a>, feature branches, and pull requests**.
+Work as **[git collaborators](./git-collaboration-workflow.md), build on feature branches, and submit pull requests for approval and merging**.
 
 **Refactor** your code after each sprint, considering:
 
 * Indentation
-* Readability
+* Readability/clarity
 * Naming
 * Organization
 * Commenting
@@ -50,11 +50,31 @@ Use the **[git collaborator scenario](./git-collaboration-workflow.md)</a>, feat
 
 ## Groups
 
-Each group has an assigned instructor or DIR, who will act as your client as well as give technical support during instructor-group meetings.
+Each group has an assigned instructor or IA, who will act as your client as well as give technical support during instructor-group meetings.
 
-#### Group \#1 - Instructor
-* Student
-* Student
+#### Team \#1 - Brianna
+* Lisa
+* Andrew V
+* William
+* Alicia
+
+#### Team \#2 - Brianna
+* Misha
+* Mikey
+* Zach
+* Sera
+
+#### Team \#3 - Cory
+* Sherie
+* Andrew C
+* Scott
+* Nick
+
+#### Team \#4 - Cory
+* Wolf
+* Sam
+* Laura
+* Ashley
 
 
 ## Presentation
@@ -70,3 +90,31 @@ Each member of your group should speak during your presentation and mention whic
 * What was easier than you thought? What was more challenging?
 * What is a lesson you will carry forward to working on Project 2?
 * Shout outs for fellow students!
+
+## Evaluation
+
+You will be evaluated on the following measures:
+
+1. Project workflow
+  - frequent commits with good commit messages
+  - cooperative group work including majority of pair programing
+  - effective use of branches
+  - planning to avoid excessive merge conflicts
+  - deliberate approach - routeside-in, logical progress from skateboard to car
+  - the code is your original code
+1. Execution
+  - to what degree does your app fulfill the user stories?
+  - code is clean
+  - follows good naming conventions
+  - code is free of obvious errors and bugs
+  - code demonstrates good problem solving
+  - code is DRY
+1. Technical requirements
+  - users are authenticated
+  - full CRUD for cities
+  - custom HTML, CSS, and JavaScript (using the asset pipeline)
+  - users are authorized
+  - commenting (optional)
+1. Creativity
+  - polished appearance
+  - personalized spin, not just a template

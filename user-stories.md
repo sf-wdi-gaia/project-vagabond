@@ -28,7 +28,7 @@
 **A user should be able to:**
 
 1. See a "default" profile photo on their profile page before adding their own photo.
-1. Update their profile photo (consider using Paperclip).
+1. Update their profile photo (consider using Paperclip or Uploadcare).
 1. See their profile photo next to their posts.
 1. Receive a welcome email after creating an account.
 
