@@ -27,6 +27,8 @@ Put effort into your **design**. Use a CSS framework (e.g. Bootstrap), partials,
 
 Work as **[git collaborators](./git-collaboration-workflow.md), build on feature branches, and submit pull requests for approval and merging**.
 
+After each sprint, **deploy to heroku** to get practice getting the app online. The earlier you resolve deployment, the easier it will be on each updated version.
+
 **Refactor** your code after each sprint, considering:
 
 * Indentation
@@ -79,13 +81,13 @@ Each group has an assigned instructor or IA, who will act as your client as well
 
 ## Presentation
 
-Each group will present their project on **Thursday, January 7th** starting at **10:00am** for 10 minutes.
+Each group will present their project on **Wendesday, October 12th** starting at **1:15pm** for 10 minutes.
 
-Each member of your group should speak during your presentation and mention which parts of the project they worked on.
+Each member of your group should speak for equal parts during your presentation and mention which parts of the project they worked on.
 
 **Your presentation should include:**
 
-* Tour (demo) of your app.
+* Tour (demo) of your app deployed on heroku.
 * How did your group approach the requirements? (mention anything unique or creative your group chose to do)
 * What was easier than you thought? What was more challenging?
 * What is a lesson you will carry forward to working on Project 2?
@@ -114,6 +116,7 @@ You will be evaluated on the following measures:
   - full CRUD for cities
   - custom HTML, CSS, and JavaScript (using the asset pipeline)
   - users are authorized
+  - deployed to heroku
   - commenting (optional)
 1. Creativity
   - polished appearance
