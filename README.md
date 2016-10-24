@@ -52,26 +52,41 @@ After each sprint, **deploy to heroku** to get practice getting the app online. 
 
 ## Groups
 
-Each group has an assigned instructor or IA, who will act as your client as well as give technical support during instructor-group meetings.
+Each group has an assigned instructor, who will act as your client as well as give technical support during instructor-group meetings.
 
-#### Team \#1 - TODO: INSTRUCTOR
-* TODO: STUDENT
-* TODO: STUDENT
+#### Team \#1 - Nathan
+- Lily Cole
+- Toby Zitsman
+- Brandon Kerr
+
+#### Team \#2 - Arun
+- Chris Chan
+- Teddy Coleman
+- Lynette Duran
+
+#### Team \#3 - Nathan
+- Sherri Aminshahidy
+- Natalia Hess
+- Kenny Bushman
+
+#### Team \#4 - Arun 
+- Ryan Hamill
+- Alivia Blount
+- Bill Cheng
 
 
 ## Presentation
 
-Each group will present their project on **TODO: WEEKDAY, MONTH DAY** starting at **TODO: TIME** for 10 minutes.
+Each group will present their project on **Thursday, Oct 27th** starting at **1:30pm** for 15 minutes.
 
 Each member of your group should speak for equal parts during your presentation and mention which parts of the project they worked on.
 
 **Your presentation should include:**
 
 * Tour (demo) of your app deployed on heroku.
-* How did your group approach the requirements? (mention anything unique or creative your group chose to do)
-* What was easier than you thought? What was more challenging?
-* What is a lesson you will carry forward to working on Project 2?
-* Shout outs for fellow students!
+* Triumphs / Challenges - What was a high point for your team? What was a low point?
+* 3 lines of code (per contributor)
+* Words of Wisdom - What is a lesson you will carry forward to working on Project 2?
 
 ## Evaluation
 
